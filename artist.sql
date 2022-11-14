@@ -1,17 +1,18 @@
-INSERT INTO artists (name)
+INSERT INTO artist (name)
 VALUES ('Bob Ross'),
 ('Andy Warhol'),
 ('Monet');
 
-SELECT name FROM artists
+SELECT name FROM artist
 ORDER BY name DESC
 LIMIT 10;
 
-SELECT name FROM artists
+SELECT name FROM artist
 ORDER BY name ASC
 LIMIT 5;
 
-SELECT name FROM artists
+SELECT name FROM artist
 WHERE name LIKE '%Black';
 
-SELECT LEFT(name,CHARINDEX('',name + '')-1) AS FirstWord FROM artists
+SELECT * FROM artist
+WHERE LEFT(name,5) = 'Black';

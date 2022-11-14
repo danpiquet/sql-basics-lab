@@ -12,7 +12,10 @@ ORDER BY name ASC
 LIMIT 5;
 
 SELECT name FROM artist
-WHERE name LIKE '%Black';
+WHERE name LIKE '%Black%';
 
 SELECT * FROM artist
 WHERE LEFT(name,5) = 'Black';
+
+SELECT * FROM artist
+WHERE name LIKE 'Black%';
